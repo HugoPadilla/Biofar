@@ -113,12 +113,6 @@
     <Compile Include="BuscarProveedor.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="cliente.Designer.vb">
-      <DependentUpon>cliente.vb</DependentUpon>
-    </Compile>
-    <Compile Include="cliente.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Clientes.Designer.vb">
       <DependentUpon>Clientes.vb</DependentUpon>
     </Compile>
@@ -150,6 +144,12 @@
     </Compile>
     <Compile Include="Grupo.Designer.vb">
       <DependentUpon>Grupo.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Medicamentos.Designer.vb">
@@ -200,9 +200,6 @@
     <EmbeddedResource Include="BuscarProveedor.resx">
       <DependentUpon>BuscarProveedor.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="cliente.resx">
-      <DependentUpon>cliente.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Clientes.resx">
       <DependentUpon>Clientes.vb</DependentUpon>
     </EmbeddedResource>
@@ -214,6 +211,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Grupo.resx">
       <DependentUpon>Grupo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Medicamentos.resx">
       <DependentUpon>Medicamentos.vb</DependentUpon>
@@ -229,6 +229,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="App.resx">
       <DependentUpon>App.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

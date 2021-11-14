@@ -24,6 +24,13 @@ Partial Class Proveedores
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.IDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NITDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NombreDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DireccionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TelefonoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ProveedoresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DataSet = New PBiofar.DataSet()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Nit = New System.Windows.Forms.TextBox()
         Me.Nombre = New System.Windows.Forms.TextBox()
@@ -38,20 +45,13 @@ Partial Class Proveedores
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.DataSet = New PBiofar.DataSet()
-        Me.ProveedoresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProveedoresTableAdapter = New PBiofar.DataSetTableAdapters.ProveedoresTableAdapter()
-        Me.IDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NITDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NombreDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DireccionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TelefonoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ProveedoresBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
-        CType(Me.DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ProveedoresBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
@@ -64,6 +64,47 @@ Partial Class Proveedores
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(733, 125)
         Me.DataGridView1.TabIndex = 0
+        '
+        'IDDataGridViewTextBoxColumn
+        '
+        Me.IDDataGridViewTextBoxColumn.DataPropertyName = "ID"
+        Me.IDDataGridViewTextBoxColumn.HeaderText = "ID"
+        Me.IDDataGridViewTextBoxColumn.Name = "IDDataGridViewTextBoxColumn"
+        Me.IDDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'NITDataGridViewTextBoxColumn
+        '
+        Me.NITDataGridViewTextBoxColumn.DataPropertyName = "NIT"
+        Me.NITDataGridViewTextBoxColumn.HeaderText = "NIT"
+        Me.NITDataGridViewTextBoxColumn.Name = "NITDataGridViewTextBoxColumn"
+        '
+        'NombreDataGridViewTextBoxColumn
+        '
+        Me.NombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre"
+        Me.NombreDataGridViewTextBoxColumn.HeaderText = "Nombre"
+        Me.NombreDataGridViewTextBoxColumn.Name = "NombreDataGridViewTextBoxColumn"
+        '
+        'DireccionDataGridViewTextBoxColumn
+        '
+        Me.DireccionDataGridViewTextBoxColumn.DataPropertyName = "Direccion"
+        Me.DireccionDataGridViewTextBoxColumn.HeaderText = "Direccion"
+        Me.DireccionDataGridViewTextBoxColumn.Name = "DireccionDataGridViewTextBoxColumn"
+        '
+        'TelefonoDataGridViewTextBoxColumn
+        '
+        Me.TelefonoDataGridViewTextBoxColumn.DataPropertyName = "Telefono"
+        Me.TelefonoDataGridViewTextBoxColumn.HeaderText = "Telefono"
+        Me.TelefonoDataGridViewTextBoxColumn.Name = "TelefonoDataGridViewTextBoxColumn"
+        '
+        'ProveedoresBindingSource
+        '
+        Me.ProveedoresBindingSource.DataMember = "Proveedores"
+        Me.ProveedoresBindingSource.DataSource = Me.DataSet
+        '
+        'DataSet
+        '
+        Me.DataSet.DataSetName = "DataSet"
+        Me.DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'GroupBox1
         '
@@ -197,50 +238,9 @@ Partial Class Proveedores
         Me.GroupBox3.TabIndex = 14
         Me.GroupBox3.TabStop = False
         '
-        'DataSet
-        '
-        Me.DataSet.DataSetName = "DataSet"
-        Me.DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'ProveedoresBindingSource
-        '
-        Me.ProveedoresBindingSource.DataMember = "Proveedores"
-        Me.ProveedoresBindingSource.DataSource = Me.DataSet
-        '
         'ProveedoresTableAdapter
         '
         Me.ProveedoresTableAdapter.ClearBeforeFill = True
-        '
-        'IDDataGridViewTextBoxColumn
-        '
-        Me.IDDataGridViewTextBoxColumn.DataPropertyName = "ID"
-        Me.IDDataGridViewTextBoxColumn.HeaderText = "ID"
-        Me.IDDataGridViewTextBoxColumn.Name = "IDDataGridViewTextBoxColumn"
-        Me.IDDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'NITDataGridViewTextBoxColumn
-        '
-        Me.NITDataGridViewTextBoxColumn.DataPropertyName = "NIT"
-        Me.NITDataGridViewTextBoxColumn.HeaderText = "NIT"
-        Me.NITDataGridViewTextBoxColumn.Name = "NITDataGridViewTextBoxColumn"
-        '
-        'NombreDataGridViewTextBoxColumn
-        '
-        Me.NombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre"
-        Me.NombreDataGridViewTextBoxColumn.HeaderText = "Nombre"
-        Me.NombreDataGridViewTextBoxColumn.Name = "NombreDataGridViewTextBoxColumn"
-        '
-        'DireccionDataGridViewTextBoxColumn
-        '
-        Me.DireccionDataGridViewTextBoxColumn.DataPropertyName = "Direccion"
-        Me.DireccionDataGridViewTextBoxColumn.HeaderText = "Direccion"
-        Me.DireccionDataGridViewTextBoxColumn.Name = "DireccionDataGridViewTextBoxColumn"
-        '
-        'TelefonoDataGridViewTextBoxColumn
-        '
-        Me.TelefonoDataGridViewTextBoxColumn.DataPropertyName = "Telefono"
-        Me.TelefonoDataGridViewTextBoxColumn.HeaderText = "Telefono"
-        Me.TelefonoDataGridViewTextBoxColumn.Name = "TelefonoDataGridViewTextBoxColumn"
         '
         'Proveedores
         '
@@ -254,12 +254,12 @@ Partial Class Proveedores
         Me.Name = "Proveedores"
         Me.Text = "Proveedores"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ProveedoresBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
-        CType(Me.DataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ProveedoresBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

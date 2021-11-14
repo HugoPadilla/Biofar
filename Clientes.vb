@@ -56,7 +56,7 @@
 
     Private Sub Clientes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: esta línea de código carga datos en la tabla 'DataSet.Clientes' Puede moverla o quitarla según sea necesario.
-        Me.ClientesTableAdapter.Fill(Me.DataSet.Clientes)
+        'Me.ClientesTableAdapter.Fill(Me.DataSet.Clientes)'
 
     End Sub
 End Class

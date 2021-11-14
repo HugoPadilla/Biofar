@@ -54,4 +54,5 @@
         Me.ProveedoresTableAdapter.Fill(Me.DataSet.Proveedores)
 
     End Sub
+
 End Class
