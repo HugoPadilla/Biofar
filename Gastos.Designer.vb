@@ -24,6 +24,12 @@ Partial Class Gastos
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.IDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FechaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ValorDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ConceptoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GastoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DataSet = New PBiofar.DataSet()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Fecha = New System.Windows.Forms.TextBox()
         Me.Val = New System.Windows.Forms.TextBox()
@@ -36,19 +42,13 @@ Partial Class Gastos
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.DataSet = New PBiofar.DataSet()
-        Me.GastoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.GastoTableAdapter = New PBiofar.DataSetTableAdapters.GastoTableAdapter()
-        Me.IDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FechaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ValorDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ConceptoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GastoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.Concep.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
-        CType(Me.DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GastoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
@@ -61,6 +61,41 @@ Partial Class Gastos
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(723, 142)
         Me.DataGridView1.TabIndex = 0
+        '
+        'IDDataGridViewTextBoxColumn
+        '
+        Me.IDDataGridViewTextBoxColumn.DataPropertyName = "ID"
+        Me.IDDataGridViewTextBoxColumn.HeaderText = "ID"
+        Me.IDDataGridViewTextBoxColumn.Name = "IDDataGridViewTextBoxColumn"
+        Me.IDDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'FechaDataGridViewTextBoxColumn
+        '
+        Me.FechaDataGridViewTextBoxColumn.DataPropertyName = "Fecha"
+        Me.FechaDataGridViewTextBoxColumn.HeaderText = "Fecha"
+        Me.FechaDataGridViewTextBoxColumn.Name = "FechaDataGridViewTextBoxColumn"
+        '
+        'ValorDataGridViewTextBoxColumn
+        '
+        Me.ValorDataGridViewTextBoxColumn.DataPropertyName = "Valor"
+        Me.ValorDataGridViewTextBoxColumn.HeaderText = "Valor"
+        Me.ValorDataGridViewTextBoxColumn.Name = "ValorDataGridViewTextBoxColumn"
+        '
+        'ConceptoDataGridViewTextBoxColumn
+        '
+        Me.ConceptoDataGridViewTextBoxColumn.DataPropertyName = "Concepto"
+        Me.ConceptoDataGridViewTextBoxColumn.HeaderText = "Concepto"
+        Me.ConceptoDataGridViewTextBoxColumn.Name = "ConceptoDataGridViewTextBoxColumn"
+        '
+        'GastoBindingSource
+        '
+        Me.GastoBindingSource.DataMember = "Gasto"
+        Me.GastoBindingSource.DataSource = Me.DataSet
+        '
+        'DataSet
+        '
+        Me.DataSet.DataSetName = "DataSet"
+        Me.DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'GroupBox1
         '
@@ -176,63 +211,29 @@ Partial Class Gastos
         Me.GroupBox3.TabIndex = 12
         Me.GroupBox3.TabStop = False
         '
-        'DataSet
-        '
-        Me.DataSet.DataSetName = "DataSet"
-        Me.DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'GastoBindingSource
-        '
-        Me.GastoBindingSource.DataMember = "Gasto"
-        Me.GastoBindingSource.DataSource = Me.DataSet
-        '
         'GastoTableAdapter
         '
         Me.GastoTableAdapter.ClearBeforeFill = True
-        '
-        'IDDataGridViewTextBoxColumn
-        '
-        Me.IDDataGridViewTextBoxColumn.DataPropertyName = "ID"
-        Me.IDDataGridViewTextBoxColumn.HeaderText = "ID"
-        Me.IDDataGridViewTextBoxColumn.Name = "IDDataGridViewTextBoxColumn"
-        Me.IDDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'FechaDataGridViewTextBoxColumn
-        '
-        Me.FechaDataGridViewTextBoxColumn.DataPropertyName = "Fecha"
-        Me.FechaDataGridViewTextBoxColumn.HeaderText = "Fecha"
-        Me.FechaDataGridViewTextBoxColumn.Name = "FechaDataGridViewTextBoxColumn"
-        '
-        'ValorDataGridViewTextBoxColumn
-        '
-        Me.ValorDataGridViewTextBoxColumn.DataPropertyName = "Valor"
-        Me.ValorDataGridViewTextBoxColumn.HeaderText = "Valor"
-        Me.ValorDataGridViewTextBoxColumn.Name = "ValorDataGridViewTextBoxColumn"
-        '
-        'ConceptoDataGridViewTextBoxColumn
-        '
-        Me.ConceptoDataGridViewTextBoxColumn.DataPropertyName = "Concepto"
-        Me.ConceptoDataGridViewTextBoxColumn.HeaderText = "Concepto"
-        Me.ConceptoDataGridViewTextBoxColumn.Name = "ConceptoDataGridViewTextBoxColumn"
         '
         'Gastos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(73, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.Concep)
         Me.Controls.Add(Me.GroupBox1)
+        Me.ForeColor = System.Drawing.Color.White
         Me.Name = "Gastos"
         Me.Text = "Gastos"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GastoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.Concep.ResumeLayout(False)
         Me.Concep.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
-        CType(Me.DataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GastoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

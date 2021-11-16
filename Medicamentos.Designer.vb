@@ -23,6 +23,12 @@ Partial Class Medicamentos
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.MedicamentosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DataSet = New PBiofar.DataSet()
+        Me.MedicamentosTableAdapter = New PBiofar.DataSetTableAdapters.MedicamentosTableAdapter()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.IDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ReferenciaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -35,123 +41,15 @@ Partial Class Medicamentos
         Me.ValorVentaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ExistenciaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.IDGrupoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MedicamentosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DataSet = New PBiofar.DataSet()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Referencia = New System.Windows.Forms.TextBox()
-        Me.Nombre = New System.Windows.Forms.TextBox()
-        Me.ValorC = New System.Windows.Forms.TextBox()
-        Me.Fecha = New System.Windows.Forms.TextBox()
-        Me.Lot = New System.Windows.Forms.TextBox()
-        Me.ValorV = New System.Windows.Forms.TextBox()
-        Me.ValorI = New System.Windows.Forms.TextBox()
-        Me.ValorCtotal = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.lote = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Valorventa = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Existencia = New System.Windows.Forms.TextBox()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Lab = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.IDGrupo = New System.Windows.Forms.TextBox()
-        Me.MedicamentosTableAdapter = New PBiofar.DataSetTableAdapters.MedicamentosTableAdapter()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
+        Me.ButtonNuevoMedicamento = New System.Windows.Forms.Button()
         CType(Me.MedicamentosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TableLayoutPanel1.SuspendLayout()
+        Me.FlowLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.AutoGenerateColumns = False
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDDataGridViewTextBoxColumn, Me.ReferenciaDataGridViewTextBoxColumn, Me.NombreDataGridViewTextBoxColumn, Me.FechaExpiracionDataGridViewTextBoxColumn, Me.LoteDataGridViewTextBoxColumn, Me.ValorCostoDataGridViewTextBoxColumn, Me.ValorIVADataGridViewTextBoxColumn, Me.ValorTotalCostoDataGridViewTextBoxColumn, Me.ValorVentaDataGridViewTextBoxColumn, Me.ExistenciaDataGridViewTextBoxColumn, Me.IDGrupoDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.MedicamentosBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(22, 19)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(705, 119)
-        Me.DataGridView1.TabIndex = 0
-        '
-        'IDDataGridViewTextBoxColumn
-        '
-        Me.IDDataGridViewTextBoxColumn.DataPropertyName = "ID"
-        Me.IDDataGridViewTextBoxColumn.HeaderText = "ID"
-        Me.IDDataGridViewTextBoxColumn.Name = "IDDataGridViewTextBoxColumn"
-        Me.IDDataGridViewTextBoxColumn.ReadOnly = True
-        '
-        'ReferenciaDataGridViewTextBoxColumn
-        '
-        Me.ReferenciaDataGridViewTextBoxColumn.DataPropertyName = "Referencia"
-        Me.ReferenciaDataGridViewTextBoxColumn.HeaderText = "Referencia"
-        Me.ReferenciaDataGridViewTextBoxColumn.Name = "ReferenciaDataGridViewTextBoxColumn"
-        '
-        'NombreDataGridViewTextBoxColumn
-        '
-        Me.NombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre"
-        Me.NombreDataGridViewTextBoxColumn.HeaderText = "Nombre"
-        Me.NombreDataGridViewTextBoxColumn.Name = "NombreDataGridViewTextBoxColumn"
-        '
-        'FechaExpiracionDataGridViewTextBoxColumn
-        '
-        Me.FechaExpiracionDataGridViewTextBoxColumn.DataPropertyName = "FechaExpiracion"
-        Me.FechaExpiracionDataGridViewTextBoxColumn.HeaderText = "FechaExpiracion"
-        Me.FechaExpiracionDataGridViewTextBoxColumn.Name = "FechaExpiracionDataGridViewTextBoxColumn"
-        '
-        'LoteDataGridViewTextBoxColumn
-        '
-        Me.LoteDataGridViewTextBoxColumn.DataPropertyName = "Lote"
-        Me.LoteDataGridViewTextBoxColumn.HeaderText = "Lote"
-        Me.LoteDataGridViewTextBoxColumn.Name = "LoteDataGridViewTextBoxColumn"
-        '
-        'ValorCostoDataGridViewTextBoxColumn
-        '
-        Me.ValorCostoDataGridViewTextBoxColumn.DataPropertyName = "ValorCosto"
-        Me.ValorCostoDataGridViewTextBoxColumn.HeaderText = "ValorCosto"
-        Me.ValorCostoDataGridViewTextBoxColumn.Name = "ValorCostoDataGridViewTextBoxColumn"
-        '
-        'ValorIVADataGridViewTextBoxColumn
-        '
-        Me.ValorIVADataGridViewTextBoxColumn.DataPropertyName = "ValorIVA"
-        Me.ValorIVADataGridViewTextBoxColumn.HeaderText = "ValorIVA"
-        Me.ValorIVADataGridViewTextBoxColumn.Name = "ValorIVADataGridViewTextBoxColumn"
-        '
-        'ValorTotalCostoDataGridViewTextBoxColumn
-        '
-        Me.ValorTotalCostoDataGridViewTextBoxColumn.DataPropertyName = "ValorTotalCosto"
-        Me.ValorTotalCostoDataGridViewTextBoxColumn.HeaderText = "ValorTotalCosto"
-        Me.ValorTotalCostoDataGridViewTextBoxColumn.Name = "ValorTotalCostoDataGridViewTextBoxColumn"
-        '
-        'ValorVentaDataGridViewTextBoxColumn
-        '
-        Me.ValorVentaDataGridViewTextBoxColumn.DataPropertyName = "ValorVenta"
-        Me.ValorVentaDataGridViewTextBoxColumn.HeaderText = "ValorVenta"
-        Me.ValorVentaDataGridViewTextBoxColumn.Name = "ValorVentaDataGridViewTextBoxColumn"
-        '
-        'ExistenciaDataGridViewTextBoxColumn
-        '
-        Me.ExistenciaDataGridViewTextBoxColumn.DataPropertyName = "Existencia"
-        Me.ExistenciaDataGridViewTextBoxColumn.HeaderText = "Existencia"
-        Me.ExistenciaDataGridViewTextBoxColumn.Name = "ExistenciaDataGridViewTextBoxColumn"
-        '
-        'IDGrupoDataGridViewTextBoxColumn
-        '
-        Me.IDGrupoDataGridViewTextBoxColumn.DataPropertyName = "IDGrupo"
-        Me.IDGrupoDataGridViewTextBoxColumn.HeaderText = "IDGrupo"
-        Me.IDGrupoDataGridViewTextBoxColumn.Name = "IDGrupoDataGridViewTextBoxColumn"
         '
         'MedicamentosBindingSource
         '
@@ -163,333 +61,200 @@ Partial Class Medicamentos
         Me.DataSet.DataSetName = "DataSet"
         Me.DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.PaleGoldenrod
-        Me.Button1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button1.Location = New System.Drawing.Point(34, 19)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(88, 24)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Guardar "
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.PaleGoldenrod
-        Me.Button2.Location = New System.Drawing.Point(241, 19)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(88, 24)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Limpiar "
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.Color.PaleGoldenrod
-        Me.Button3.Location = New System.Drawing.Point(598, 19)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(88, 24)
-        Me.Button3.TabIndex = 3
-        Me.Button3.Text = "Cerrar "
-        Me.Button3.UseVisualStyleBackColor = False
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.DataGridView1)
-        Me.GroupBox1.ForeColor = System.Drawing.Color.Red
-        Me.GroupBox1.Location = New System.Drawing.Point(26, 278)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(758, 157)
-        Me.GroupBox1.TabIndex = 4
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Datos Registrados"
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.Button3)
-        Me.GroupBox2.Controls.Add(Me.Button2)
-        Me.GroupBox2.Controls.Add(Me.Button1)
-        Me.GroupBox2.Location = New System.Drawing.Point(26, 199)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(757, 57)
-        Me.GroupBox2.TabIndex = 5
-        Me.GroupBox2.TabStop = False
-        '
-        'Referencia
-        '
-        Me.Referencia.Location = New System.Drawing.Point(16, 36)
-        Me.Referencia.Name = "Referencia"
-        Me.Referencia.Size = New System.Drawing.Size(110, 20)
-        Me.Referencia.TabIndex = 6
-        '
-        'Nombre
-        '
-        Me.Nombre.Location = New System.Drawing.Point(153, 36)
-        Me.Nombre.Name = "Nombre"
-        Me.Nombre.Size = New System.Drawing.Size(164, 20)
-        Me.Nombre.TabIndex = 7
-        '
-        'ValorC
-        '
-        Me.ValorC.Location = New System.Drawing.Point(640, 36)
-        Me.ValorC.Name = "ValorC"
-        Me.ValorC.Size = New System.Drawing.Size(110, 20)
-        Me.ValorC.TabIndex = 8
-        '
-        'Fecha
-        '
-        Me.Fecha.Location = New System.Drawing.Point(339, 36)
-        Me.Fecha.Name = "Fecha"
-        Me.Fecha.Size = New System.Drawing.Size(129, 20)
-        Me.Fecha.TabIndex = 9
-        '
-        'Lot
-        '
-        Me.Lot.Location = New System.Drawing.Point(503, 36)
-        Me.Lot.Name = "Lot"
-        Me.Lot.Size = New System.Drawing.Size(106, 20)
-        Me.Lot.TabIndex = 10
-        '
-        'ValorV
-        '
-        Me.ValorV.Location = New System.Drawing.Point(265, 123)
-        Me.ValorV.Name = "ValorV"
-        Me.ValorV.Size = New System.Drawing.Size(119, 20)
-        Me.ValorV.TabIndex = 11
-        '
-        'ValorI
-        '
-        Me.ValorI.Location = New System.Drawing.Point(16, 123)
-        Me.ValorI.Name = "ValorI"
-        Me.ValorI.Size = New System.Drawing.Size(91, 20)
-        Me.ValorI.TabIndex = 12
-        '
-        'ValorCtotal
-        '
-        Me.ValorCtotal.Location = New System.Drawing.Point(131, 123)
-        Me.ValorCtotal.Name = "ValorCtotal"
-        Me.ValorCtotal.Size = New System.Drawing.Size(113, 20)
-        Me.ValorCtotal.TabIndex = 13
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(35, 20)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(62, 13)
-        Me.Label1.TabIndex = 14
-        Me.Label1.Text = "Referencia "
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(207, 20)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(47, 13)
-        Me.Label2.TabIndex = 15
-        Me.Label2.Text = "Nombre "
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(356, 20)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(92, 13)
-        Me.Label3.TabIndex = 16
-        Me.Label3.Text = "Fecha Expiración "
-        '
-        'lote
-        '
-        Me.lote.AutoSize = True
-        Me.lote.Location = New System.Drawing.Point(548, 20)
-        Me.lote.Name = "lote"
-        Me.lote.Size = New System.Drawing.Size(31, 13)
-        Me.lote.TabIndex = 17
-        Me.lote.Text = "Lote "
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(661, 20)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(61, 13)
-        Me.Label5.TabIndex = 18
-        Me.Label5.Text = "Valor Costo"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(140, 106)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(88, 13)
-        Me.Label6.TabIndex = 19
-        Me.Label6.Text = "Valor Costo Total"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(35, 103)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(49, 13)
-        Me.Label7.TabIndex = 20
-        Me.Label7.Text = "Valor Iva"
-        '
-        'Valorventa
-        '
-        Me.Valorventa.AutoSize = True
-        Me.Valorventa.Location = New System.Drawing.Point(298, 103)
-        Me.Valorventa.Name = "Valorventa"
-        Me.Valorventa.Size = New System.Drawing.Size(65, 13)
-        Me.Valorventa.TabIndex = 21
-        Me.Valorventa.Text = "Valor Venta "
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(428, 107)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(58, 13)
-        Me.Label9.TabIndex = 22
-        Me.Label9.Text = "Existencia "
-        '
-        'Existencia
-        '
-        Me.Existencia.Location = New System.Drawing.Point(407, 123)
-        Me.Existencia.Name = "Existencia"
-        Me.Existencia.Size = New System.Drawing.Size(110, 20)
-        Me.Existencia.TabIndex = 23
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.Controls.Add(Me.Lab)
-        Me.GroupBox3.Controls.Add(Me.TextBox1)
-        Me.GroupBox3.Controls.Add(Me.Label4)
-        Me.GroupBox3.Controls.Add(Me.Label10)
-        Me.GroupBox3.Controls.Add(Me.IDGrupo)
-        Me.GroupBox3.Controls.Add(Me.Existencia)
-        Me.GroupBox3.Controls.Add(Me.Label9)
-        Me.GroupBox3.Controls.Add(Me.Valorventa)
-        Me.GroupBox3.Controls.Add(Me.Label7)
-        Me.GroupBox3.Controls.Add(Me.Label6)
-        Me.GroupBox3.Controls.Add(Me.Label5)
-        Me.GroupBox3.Controls.Add(Me.Label3)
-        Me.GroupBox3.Controls.Add(Me.lote)
-        Me.GroupBox3.Controls.Add(Me.Label2)
-        Me.GroupBox3.Controls.Add(Me.Label1)
-        Me.GroupBox3.Controls.Add(Me.ValorCtotal)
-        Me.GroupBox3.Controls.Add(Me.ValorI)
-        Me.GroupBox3.Controls.Add(Me.ValorV)
-        Me.GroupBox3.Controls.Add(Me.Lot)
-        Me.GroupBox3.Controls.Add(Me.Fecha)
-        Me.GroupBox3.Controls.Add(Me.ValorC)
-        Me.GroupBox3.Controls.Add(Me.Nombre)
-        Me.GroupBox3.Controls.Add(Me.Referencia)
-        Me.GroupBox3.Location = New System.Drawing.Point(22, 13)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(761, 174)
-        Me.GroupBox3.TabIndex = 24
-        Me.GroupBox3.TabStop = False
-        '
-        'Lab
-        '
-        Me.Lab.AutoSize = True
-        Me.Lab.Location = New System.Drawing.Point(677, 107)
-        Me.Lab.Name = "Lab"
-        Me.Lab.Size = New System.Drawing.Size(63, 13)
-        Me.Lab.TabIndex = 28
-        Me.Lab.Text = "Laboratorio "
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(653, 123)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(102, 20)
-        Me.TextBox1.TabIndex = 27
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(585, 87)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(0, 13)
-        Me.Label4.TabIndex = 26
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(559, 107)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(50, 13)
-        Me.Label10.TabIndex = 25
-        Me.Label10.Text = "IDGrupo "
-        '
-        'IDGrupo
-        '
-        Me.IDGrupo.Location = New System.Drawing.Point(539, 123)
-        Me.IDGrupo.Name = "IDGrupo"
-        Me.IDGrupo.Size = New System.Drawing.Size(91, 20)
-        Me.IDGrupo.TabIndex = 24
-        '
         'MedicamentosTableAdapter
         '
         Me.MedicamentosTableAdapter.ClearBeforeFill = True
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.AutoGenerateColumns = False
+        Me.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(97, Byte), Integer))
+        Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDDataGridViewTextBoxColumn, Me.ReferenciaDataGridViewTextBoxColumn, Me.NombreDataGridViewTextBoxColumn, Me.FechaExpiracionDataGridViewTextBoxColumn, Me.LoteDataGridViewTextBoxColumn, Me.ValorCostoDataGridViewTextBoxColumn, Me.ValorIVADataGridViewTextBoxColumn, Me.ValorTotalCostoDataGridViewTextBoxColumn, Me.ValorVentaDataGridViewTextBoxColumn, Me.ExistenciaDataGridViewTextBoxColumn, Me.IDGrupoDataGridViewTextBoxColumn})
+        Me.DataGridView1.DataSource = Me.MedicamentosBindingSource
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(97, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle2
+        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DataGridView1.EnableHeadersVisualStyles = False
+        Me.DataGridView1.GridColor = System.Drawing.Color.Aqua
+        Me.DataGridView1.Location = New System.Drawing.Point(14, 125)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowHeadersVisible = False
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(97, Byte), Integer))
+        Me.DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle3
+        Me.DataGridView1.Size = New System.Drawing.Size(746, 430)
+        Me.DataGridView1.TabIndex = 0
+        '
+        'IDDataGridViewTextBoxColumn
+        '
+        Me.IDDataGridViewTextBoxColumn.DataPropertyName = "ID"
+        Me.IDDataGridViewTextBoxColumn.FillWeight = 64.09598!
+        Me.IDDataGridViewTextBoxColumn.HeaderText = "ID"
+        Me.IDDataGridViewTextBoxColumn.Name = "IDDataGridViewTextBoxColumn"
+        Me.IDDataGridViewTextBoxColumn.ReadOnly = True
+        Me.IDDataGridViewTextBoxColumn.Width = 50
+        '
+        'ReferenciaDataGridViewTextBoxColumn
+        '
+        Me.ReferenciaDataGridViewTextBoxColumn.DataPropertyName = "Referencia"
+        Me.ReferenciaDataGridViewTextBoxColumn.FillWeight = 71.65859!
+        Me.ReferenciaDataGridViewTextBoxColumn.HeaderText = "Referencia"
+        Me.ReferenciaDataGridViewTextBoxColumn.Name = "ReferenciaDataGridViewTextBoxColumn"
+        Me.ReferenciaDataGridViewTextBoxColumn.Width = 108
+        '
+        'NombreDataGridViewTextBoxColumn
+        '
+        Me.NombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre"
+        Me.NombreDataGridViewTextBoxColumn.FillWeight = 80.91961!
+        Me.NombreDataGridViewTextBoxColumn.HeaderText = "Nombre"
+        Me.NombreDataGridViewTextBoxColumn.Name = "NombreDataGridViewTextBoxColumn"
+        Me.NombreDataGridViewTextBoxColumn.Width = 93
+        '
+        'FechaExpiracionDataGridViewTextBoxColumn
+        '
+        Me.FechaExpiracionDataGridViewTextBoxColumn.DataPropertyName = "FechaExpiracion"
+        Me.FechaExpiracionDataGridViewTextBoxColumn.FillWeight = 87.26897!
+        Me.FechaExpiracionDataGridViewTextBoxColumn.HeaderText = "FechaExpiracion"
+        Me.FechaExpiracionDataGridViewTextBoxColumn.Name = "FechaExpiracionDataGridViewTextBoxColumn"
+        Me.FechaExpiracionDataGridViewTextBoxColumn.Width = 146
+        '
+        'LoteDataGridViewTextBoxColumn
+        '
+        Me.LoteDataGridViewTextBoxColumn.DataPropertyName = "Lote"
+        Me.LoteDataGridViewTextBoxColumn.FillWeight = 95.85338!
+        Me.LoteDataGridViewTextBoxColumn.HeaderText = "Lote"
+        Me.LoteDataGridViewTextBoxColumn.Name = "LoteDataGridViewTextBoxColumn"
+        Me.LoteDataGridViewTextBoxColumn.Width = 65
+        '
+        'ValorCostoDataGridViewTextBoxColumn
+        '
+        Me.ValorCostoDataGridViewTextBoxColumn.DataPropertyName = "ValorCosto"
+        Me.ValorCostoDataGridViewTextBoxColumn.FillWeight = 101.1257!
+        Me.ValorCostoDataGridViewTextBoxColumn.HeaderText = "ValorCosto"
+        Me.ValorCostoDataGridViewTextBoxColumn.Name = "ValorCostoDataGridViewTextBoxColumn"
+        Me.ValorCostoDataGridViewTextBoxColumn.Width = 111
+        '
+        'ValorIVADataGridViewTextBoxColumn
+        '
+        Me.ValorIVADataGridViewTextBoxColumn.DataPropertyName = "ValorIVA"
+        Me.ValorIVADataGridViewTextBoxColumn.FillWeight = 109.1095!
+        Me.ValorIVADataGridViewTextBoxColumn.HeaderText = "ValorIVA"
+        Me.ValorIVADataGridViewTextBoxColumn.Name = "ValorIVADataGridViewTextBoxColumn"
+        Me.ValorIVADataGridViewTextBoxColumn.Width = 94
+        '
+        'ValorTotalCostoDataGridViewTextBoxColumn
+        '
+        Me.ValorTotalCostoDataGridViewTextBoxColumn.DataPropertyName = "ValorTotalCosto"
+        Me.ValorTotalCostoDataGridViewTextBoxColumn.FillWeight = 113.4258!
+        Me.ValorTotalCostoDataGridViewTextBoxColumn.HeaderText = "ValorTotalCosto"
+        Me.ValorTotalCostoDataGridViewTextBoxColumn.Name = "ValorTotalCostoDataGridViewTextBoxColumn"
+        Me.ValorTotalCostoDataGridViewTextBoxColumn.Width = 143
+        '
+        'ValorVentaDataGridViewTextBoxColumn
+        '
+        Me.ValorVentaDataGridViewTextBoxColumn.DataPropertyName = "ValorVenta"
+        Me.ValorVentaDataGridViewTextBoxColumn.FillWeight = 120.8765!
+        Me.ValorVentaDataGridViewTextBoxColumn.HeaderText = "ValorVenta"
+        Me.ValorVentaDataGridViewTextBoxColumn.Name = "ValorVentaDataGridViewTextBoxColumn"
+        Me.ValorVentaDataGridViewTextBoxColumn.Width = 110
+        '
+        'ExistenciaDataGridViewTextBoxColumn
+        '
+        Me.ExistenciaDataGridViewTextBoxColumn.DataPropertyName = "Existencia"
+        Me.ExistenciaDataGridViewTextBoxColumn.FillWeight = 124.3443!
+        Me.ExistenciaDataGridViewTextBoxColumn.HeaderText = "Existencia"
+        Me.ExistenciaDataGridViewTextBoxColumn.Name = "ExistenciaDataGridViewTextBoxColumn"
+        Me.ExistenciaDataGridViewTextBoxColumn.Width = 102
+        '
+        'IDGrupoDataGridViewTextBoxColumn
+        '
+        Me.IDGrupoDataGridViewTextBoxColumn.DataPropertyName = "IDGrupo"
+        Me.IDGrupoDataGridViewTextBoxColumn.FillWeight = 131.3217!
+        Me.IDGrupoDataGridViewTextBoxColumn.HeaderText = "IDGrupo"
+        Me.IDGrupoDataGridViewTextBoxColumn.Name = "IDGrupoDataGridViewTextBoxColumn"
+        Me.IDGrupoDataGridViewTextBoxColumn.Width = 94
+        '
+        'TableLayoutPanel1
+        '
+        Me.TableLayoutPanel1.ColumnCount = 1
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
+        Me.TableLayoutPanel1.Controls.Add(Me.DataGridView1, 0, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.FlowLayoutPanel1, 0, 0)
+        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+        Me.TableLayoutPanel1.Padding = New System.Windows.Forms.Padding(10)
+        Me.TableLayoutPanel1.RowCount = 2
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(774, 570)
+        Me.TableLayoutPanel1.TabIndex = 1
+        '
+        'FlowLayoutPanel1
+        '
+        Me.FlowLayoutPanel1.Controls.Add(Me.ButtonNuevoMedicamento)
+        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(13, 13)
+        Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(706, 104)
+        Me.FlowLayoutPanel1.TabIndex = 1
+        '
+        'ButtonNuevoMedicamento
+        '
+        Me.ButtonNuevoMedicamento.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.ButtonNuevoMedicamento.FlatAppearance.BorderSize = 0
+        Me.ButtonNuevoMedicamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonNuevoMedicamento.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonNuevoMedicamento.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(73, Byte), Integer))
+        Me.ButtonNuevoMedicamento.Location = New System.Drawing.Point(24, 14)
+        Me.ButtonNuevoMedicamento.Margin = New System.Windows.Forms.Padding(24, 14, 0, 5)
+        Me.ButtonNuevoMedicamento.Name = "ButtonNuevoMedicamento"
+        Me.ButtonNuevoMedicamento.Size = New System.Drawing.Size(205, 36)
+        Me.ButtonNuevoMedicamento.TabIndex = 13
+        Me.ButtonNuevoMedicamento.Text = "Agregar medicamento"
+        Me.ButtonNuevoMedicamento.UseVisualStyleBackColor = False
+        '
         'Medicamentos
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.GroupBox3)
-        Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(73, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(774, 570)
+        Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ForeColor = System.Drawing.Color.White
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Medicamentos"
         Me.Text = "Medicamentos"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MedicamentosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TableLayoutPanel1.ResumeLayout(False)
+        Me.FlowLayoutPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents Referencia As TextBox
-    Friend WithEvents Nombre As TextBox
-    Friend WithEvents ValorC As TextBox
-    Friend WithEvents Fecha As TextBox
-    Friend WithEvents Lot As TextBox
-    Friend WithEvents ValorV As TextBox
-    Friend WithEvents ValorI As TextBox
-    Friend WithEvents ValorCtotal As TextBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents lote As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Valorventa As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Existencia As TextBox
-    Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents Label10 As Label
-    Friend WithEvents IDGrupo As TextBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Lab As Label
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents DataSet As DataSet
     Friend WithEvents MedicamentosBindingSource As BindingSource
     Friend WithEvents MedicamentosTableAdapter As DataSetTableAdapters.MedicamentosTableAdapter
+    Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents IDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents ReferenciaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents NombreDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
@@ -501,4 +266,7 @@ Partial Class Medicamentos
     Friend WithEvents ValorVentaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents ExistenciaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents IDGrupoDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
+    Friend WithEvents ButtonNuevoMedicamento As Button
 End Class

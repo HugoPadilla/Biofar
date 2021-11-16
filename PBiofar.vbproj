@@ -89,6 +89,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgregarProveedor.Designer.vb">
+      <DependentUpon>AgregarProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="BuscarClientes.Designer.vb">
       <DependentUpon>BuscarClientes.vb</DependentUpon>
     </Compile>
@@ -133,6 +139,12 @@
     <Compile Include="Facturacion.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AgregarMedicamento.Designer.vb">
+      <DependentUpon>AgregarMedicamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarMedicamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Gastos.Designer.vb">
       <DependentUpon>Gastos.vb</DependentUpon>
     </Compile>
@@ -150,6 +162,12 @@
       <DependentUpon>Inicio.vb</DependentUpon>
     </Compile>
     <Compile Include="Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Medicamentos.Designer.vb">
@@ -188,6 +206,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AgregarMedicamento.resx">
+      <DependentUpon>AgregarMedicamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarProveedor.resx">
+      <DependentUpon>AgregarProveedor.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BuscarClientes.resx">
       <DependentUpon>BuscarClientes.vb</DependentUpon>
     </EmbeddedResource>
@@ -214,6 +238,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Medicamentos.resx">
       <DependentUpon>Medicamentos.vb</DependentUpon>

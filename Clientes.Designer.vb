@@ -118,7 +118,7 @@ Partial Class Clientes
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.DataGridView1)
-        Me.GroupBox1.ForeColor = System.Drawing.Color.Red
+        Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(234, Byte), Integer))
         Me.GroupBox1.Location = New System.Drawing.Point(8, 277)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(771, 161)
@@ -128,81 +128,101 @@ Partial Class Clientes
         '
         'NDocumento
         '
+        Me.NDocumento.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(146, Byte), Integer))
+        Me.NDocumento.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NDocumento.Location = New System.Drawing.Point(16, 46)
         Me.NDocumento.Name = "NDocumento"
-        Me.NDocumento.Size = New System.Drawing.Size(121, 20)
+        Me.NDocumento.Size = New System.Drawing.Size(121, 25)
         Me.NDocumento.TabIndex = 2
         '
         'Nombre2
         '
+        Me.Nombre2.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(146, Byte), Integer))
+        Me.Nombre2.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Nombre2.Location = New System.Drawing.Point(162, 46)
         Me.Nombre2.Name = "Nombre2"
-        Me.Nombre2.Size = New System.Drawing.Size(125, 20)
+        Me.Nombre2.Size = New System.Drawing.Size(125, 25)
         Me.Nombre2.TabIndex = 3
         '
         'Dir
         '
+        Me.Dir.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(146, Byte), Integer))
+        Me.Dir.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Dir.Location = New System.Drawing.Point(479, 46)
         Me.Dir.Name = "Dir"
-        Me.Dir.Size = New System.Drawing.Size(118, 20)
+        Me.Dir.Size = New System.Drawing.Size(118, 25)
         Me.Dir.TabIndex = 4
         '
         'Apellido1
         '
+        Me.Apellido1.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(146, Byte), Integer))
+        Me.Apellido1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Apellido1.Location = New System.Drawing.Point(317, 46)
         Me.Apellido1.Name = "Apellido1"
-        Me.Apellido1.Size = New System.Drawing.Size(128, 20)
+        Me.Apellido1.Size = New System.Drawing.Size(128, 25)
         Me.Apellido1.TabIndex = 5
         '
         'Tel
         '
+        Me.Tel.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(146, Byte), Integer))
+        Me.Tel.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Tel.Location = New System.Drawing.Point(636, 46)
         Me.Tel.Name = "Tel"
-        Me.Tel.Size = New System.Drawing.Size(112, 20)
+        Me.Tel.Size = New System.Drawing.Size(112, 25)
         Me.Tel.TabIndex = 6
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(39, 30)
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(16, 22)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(74, 13)
+        Me.Label1.Size = New System.Drawing.Size(109, 21)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "N°Documento"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(198, 30)
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(162, 22)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(47, 13)
+        Me.Label2.Size = New System.Drawing.Size(72, 21)
         Me.Label2.TabIndex = 8
         Me.Label2.Text = "Nombre "
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(355, 30)
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(317, 22)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(47, 13)
+        Me.Label3.Size = New System.Drawing.Size(71, 21)
         Me.Label3.TabIndex = 9
         Me.Label3.Text = "Apellido "
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(514, 30)
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(479, 22)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(55, 13)
+        Me.Label4.Size = New System.Drawing.Size(79, 21)
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "Direccion "
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(663, 30)
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(636, 22)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(52, 13)
+        Me.Label5.Size = New System.Drawing.Size(72, 21)
         Me.Label5.TabIndex = 11
         Me.Label5.Text = "Telefono "
         '
@@ -273,7 +293,7 @@ Partial Class Clientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(73, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)

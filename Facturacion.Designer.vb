@@ -95,7 +95,7 @@ Partial Class Facturacion
         '
         'GroupBox1
         '
-        Me.GroupBox1.BackColor = System.Drawing.Color.Navy
+        Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(97, Byte), Integer))
         Me.GroupBox1.Controls.Add(Me.TextBox11)
         Me.GroupBox1.Controls.Add(Me.Label12)
         Me.GroupBox1.Controls.Add(Me.TextBox10)
@@ -146,6 +146,7 @@ Partial Class Facturacion
         '
         'TextBox11
         '
+        Me.TextBox11.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(146, Byte), Integer))
         Me.TextBox11.Location = New System.Drawing.Point(117, 164)
         Me.TextBox11.Name = "TextBox11"
         Me.TextBox11.Size = New System.Drawing.Size(97, 21)
@@ -164,6 +165,7 @@ Partial Class Facturacion
         '
         'TextBox10
         '
+        Me.TextBox10.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(146, Byte), Integer))
         Me.TextBox10.Location = New System.Drawing.Point(6, 164)
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.Size = New System.Drawing.Size(100, 21)
@@ -182,6 +184,7 @@ Partial Class Facturacion
         '
         'TextBox9
         '
+        Me.TextBox9.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(146, Byte), Integer))
         Me.TextBox9.Location = New System.Drawing.Point(316, 164)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Size = New System.Drawing.Size(76, 21)
@@ -200,6 +203,7 @@ Partial Class Facturacion
         '
         'TextBox8
         '
+        Me.TextBox8.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(146, Byte), Integer))
         Me.TextBox8.Location = New System.Drawing.Point(229, 164)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(76, 21)
@@ -230,24 +234,31 @@ Partial Class Facturacion
         '
         'Button5
         '
+        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.Button5.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.ForeColor = System.Drawing.Color.Black
         Me.Button5.Location = New System.Drawing.Point(603, 160)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(76, 24)
         Me.Button5.TabIndex = 29
         Me.Button5.Text = "Button5"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.Button5.UseVisualStyleBackColor = False
         '
         'Button4
         '
+        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.Button4.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.ForeColor = System.Drawing.Color.Black
         Me.Button4.Location = New System.Drawing.Point(505, 160)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(76, 24)
         Me.Button4.TabIndex = 28
         Me.Button4.Text = "Button4"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Button4.UseVisualStyleBackColor = False
         '
         'TextBox7
         '
+        Me.TextBox7.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(146, Byte), Integer))
         Me.TextBox7.Location = New System.Drawing.Point(593, 102)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(76, 21)
@@ -266,6 +277,7 @@ Partial Class Facturacion
         '
         'TextBox6
         '
+        Me.TextBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(146, Byte), Integer))
         Me.TextBox6.Location = New System.Drawing.Point(505, 102)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(76, 21)
@@ -401,15 +413,19 @@ Partial Class Facturacion
         '
         'Button3
         '
+        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.Button3.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.Color.Black
         Me.Button3.Location = New System.Drawing.Point(765, 42)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(66, 24)
         Me.Button3.TabIndex = 14
         Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.UseVisualStyleBackColor = False
         '
         'TextBox5
         '
+        Me.TextBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(146, Byte), Integer))
         Me.TextBox5.Location = New System.Drawing.Point(667, 46)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(76, 21)
@@ -439,6 +455,7 @@ Partial Class Facturacion
         '
         'DateTimePicker1
         '
+        Me.DateTimePicker1.CalendarMonthBackground = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(146, Byte), Integer))
         Me.DateTimePicker1.Location = New System.Drawing.Point(505, 47)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(135, 21)
@@ -468,6 +485,7 @@ Partial Class Facturacion
         '
         'TextBox4
         '
+        Me.TextBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(146, Byte), Integer))
         Me.TextBox4.Location = New System.Drawing.Point(229, 105)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(266, 21)
@@ -475,7 +493,7 @@ Partial Class Facturacion
         '
         'TextBox3
         '
-        Me.TextBox3.BackColor = System.Drawing.SystemColors.Info
+        Me.TextBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(146, Byte), Integer))
         Me.TextBox3.ForeColor = System.Drawing.SystemColors.WindowText
         Me.TextBox3.Location = New System.Drawing.Point(210, 46)
         Me.TextBox3.Name = "TextBox3"
@@ -484,24 +502,31 @@ Partial Class Facturacion
         '
         'Button2
         '
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.Black
         Me.Button2.Location = New System.Drawing.Point(148, 102)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(66, 24)
         Me.Button2.TabIndex = 5
         Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.Black
         Me.Button1.Location = New System.Drawing.Point(128, 46)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(66, 24)
         Me.Button1.TabIndex = 4
         Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'TextBox2
         '
+        Me.TextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(146, Byte), Integer))
         Me.TextBox2.Location = New System.Drawing.Point(6, 106)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(128, 21)
@@ -520,6 +545,7 @@ Partial Class Facturacion
         '
         'TextBox1
         '
+        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(146, Byte), Integer))
         Me.TextBox1.Location = New System.Drawing.Point(6, 47)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 21)
@@ -538,7 +564,7 @@ Partial Class Facturacion
         '
         'GroupBox2
         '
-        Me.GroupBox2.BackColor = System.Drawing.Color.Navy
+        Me.GroupBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(97, Byte), Integer))
         Me.GroupBox2.Controls.Add(Me.DataGridView1)
         Me.GroupBox2.Location = New System.Drawing.Point(12, 243)
         Me.GroupBox2.Name = "GroupBox2"
@@ -556,6 +582,7 @@ Partial Class Facturacion
         '
         'TextBox12
         '
+        Me.TextBox12.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(146, Byte), Integer))
         Me.TextBox12.Location = New System.Drawing.Point(773, 435)
         Me.TextBox12.Multiline = True
         Me.TextBox12.Name = "TextBox12"
@@ -564,6 +591,7 @@ Partial Class Facturacion
         '
         'TextBox13
         '
+        Me.TextBox13.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(146, Byte), Integer))
         Me.TextBox13.Location = New System.Drawing.Point(659, 435)
         Me.TextBox13.Name = "TextBox13"
         Me.TextBox13.Size = New System.Drawing.Size(96, 20)
@@ -571,6 +599,7 @@ Partial Class Facturacion
         '
         'TextBox14
         '
+        Me.TextBox14.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(146, Byte), Integer))
         Me.TextBox14.Location = New System.Drawing.Point(531, 435)
         Me.TextBox14.Name = "TextBox14"
         Me.TextBox14.Size = New System.Drawing.Size(112, 20)
@@ -578,6 +607,7 @@ Partial Class Facturacion
         '
         'TextBox15
         '
+        Me.TextBox15.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(146, Byte), Integer))
         Me.TextBox15.Location = New System.Drawing.Point(389, 435)
         Me.TextBox15.Name = "TextBox15"
         Me.TextBox15.Size = New System.Drawing.Size(123, 20)
@@ -629,7 +659,7 @@ Partial Class Facturacion
         '
         'GroupBox3
         '
-        Me.GroupBox3.BackColor = System.Drawing.Color.Navy
+        Me.GroupBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(97, Byte), Integer))
         Me.GroupBox3.Controls.Add(Me.TextBox16)
         Me.GroupBox3.Controls.Add(Me.Label17)
         Me.GroupBox3.Location = New System.Drawing.Point(12, 483)
@@ -640,6 +670,7 @@ Partial Class Facturacion
         '
         'TextBox16
         '
+        Me.TextBox16.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(146, Byte), Integer))
         Me.TextBox16.Location = New System.Drawing.Point(89, 13)
         Me.TextBox16.Name = "TextBox16"
         Me.TextBox16.Size = New System.Drawing.Size(785, 20)
@@ -659,7 +690,7 @@ Partial Class Facturacion
         '
         'GroupBox4
         '
-        Me.GroupBox4.BackColor = System.Drawing.Color.Navy
+        Me.GroupBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(97, Byte), Integer))
         Me.GroupBox4.Controls.Add(Me.Button7)
         Me.GroupBox4.Controls.Add(Me.Button6)
         Me.GroupBox4.Controls.Add(Me.RadioButton11)
@@ -678,21 +709,27 @@ Partial Class Facturacion
         '
         'Button7
         '
+        Me.Button7.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.Button7.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.ForeColor = System.Drawing.Color.Black
         Me.Button7.Location = New System.Drawing.Point(723, 21)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(156, 38)
         Me.Button7.TabIndex = 51
         Me.Button7.Text = "Factura"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.Button7.UseVisualStyleBackColor = False
         '
         'Button6
         '
+        Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.Button6.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.ForeColor = System.Drawing.Color.Black
         Me.Button6.Location = New System.Drawing.Point(543, 21)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(156, 38)
         Me.Button6.TabIndex = 37
         Me.Button6.Text = "Generar Cobro"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.Button6.UseVisualStyleBackColor = False
         '
         'RadioButton11
         '
@@ -722,6 +759,7 @@ Partial Class Facturacion
         '
         'TextBox18
         '
+        Me.TextBox18.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(146, Byte), Integer))
         Me.TextBox18.Location = New System.Drawing.Point(248, 31)
         Me.TextBox18.Multiline = True
         Me.TextBox18.Name = "TextBox18"
@@ -741,6 +779,7 @@ Partial Class Facturacion
         '
         'TextBox17
         '
+        Me.TextBox17.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(146, Byte), Integer))
         Me.TextBox17.Location = New System.Drawing.Point(117, 31)
         Me.TextBox17.Multiline = True
         Me.TextBox17.Name = "TextBox17"
@@ -760,6 +799,7 @@ Partial Class Facturacion
         '
         'ComboBox1
         '
+        Me.ComboBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(7, Byte), Integer), CType(CType(60, Byte), Integer), CType(CType(146, Byte), Integer))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"Contado"})
         Me.ComboBox1.Location = New System.Drawing.Point(6, 36)
@@ -778,11 +818,11 @@ Partial Class Facturacion
         Me.Label18.TabIndex = 46
         Me.Label18.Text = "Tipo de Venta"
         '
-        'Form1
+        'Facturacion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.MidnightBlue
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(73, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(919, 620)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
@@ -797,7 +837,7 @@ Partial Class Facturacion
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.ForeColor = System.Drawing.Color.Black
-        Me.Name = "Form1"
+        Me.Name = "Facturacion"
         Me.Text = "Registro"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
