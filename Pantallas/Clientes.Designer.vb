@@ -240,7 +240,7 @@ Partial Class Clientes
         Me.GroupBox2.Controls.Add(Me.NDocumento)
         Me.GroupBox2.Location = New System.Drawing.Point(9, 34)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(771, 112)
+        Me.GroupBox2.Size = New System.Drawing.Size(762, 112)
         Me.GroupBox2.TabIndex = 12
         Me.GroupBox2.TabStop = False
         '
@@ -294,7 +294,7 @@ Partial Class Clientes
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(73, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(746, 475)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)

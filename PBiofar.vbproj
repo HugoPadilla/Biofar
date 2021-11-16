@@ -89,40 +89,40 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AgregarProveedor.Designer.vb">
+    <Compile Include="Pantallas\AgregarProveedor.Designer.vb">
       <DependentUpon>AgregarProveedor.vb</DependentUpon>
     </Compile>
-    <Compile Include="AgregarProveedor.vb">
+    <Compile Include="Pantallas\AgregarProveedor.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BuscarClientes.Designer.vb">
+    <Compile Include="Pantallas\BuscarClientes.Designer.vb">
       <DependentUpon>BuscarClientes.vb</DependentUpon>
     </Compile>
-    <Compile Include="BuscarClientes.vb">
+    <Compile Include="Pantallas\BuscarClientes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BuscarGastos.Designer.vb">
+    <Compile Include="Pantallas\BuscarGastos.Designer.vb">
       <DependentUpon>BuscarGastos.vb</DependentUpon>
     </Compile>
-    <Compile Include="BuscarGastos.vb">
+    <Compile Include="Pantallas\BuscarGastos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BuscarMedicamentos.Designer.vb">
+    <Compile Include="Pantallas\BuscarMedicamentos.Designer.vb">
       <DependentUpon>BuscarMedicamentos.vb</DependentUpon>
     </Compile>
-    <Compile Include="BuscarMedicamentos.vb">
+    <Compile Include="Pantallas\BuscarMedicamentos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BuscarProveedor.Designer.vb">
+    <Compile Include="Pantallas\BuscarProveedor.Designer.vb">
       <DependentUpon>BuscarProveedor.vb</DependentUpon>
     </Compile>
-    <Compile Include="BuscarProveedor.vb">
+    <Compile Include="Pantallas\BuscarProveedor.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Clientes.Designer.vb">
+    <Compile Include="Pantallas\Clientes.Designer.vb">
       <DependentUpon>Clientes.vb</DependentUpon>
     </Compile>
-    <Compile Include="Clientes.vb">
+    <Compile Include="Pantallas\Clientes.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DataSet.Designer.vb">
@@ -133,47 +133,47 @@
     <Compile Include="DataSet.vb">
       <DependentUpon>DataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Facturacion.Designer.vb">
+    <Compile Include="Pantallas\Facturacion.Designer.vb">
       <DependentUpon>Facturacion.vb</DependentUpon>
     </Compile>
-    <Compile Include="Facturacion.vb">
+    <Compile Include="Pantallas\Facturacion.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AgregarMedicamento.Designer.vb">
+    <Compile Include="Pantallas\AgregarMedicamento.Designer.vb">
       <DependentUpon>AgregarMedicamento.vb</DependentUpon>
     </Compile>
-    <Compile Include="AgregarMedicamento.vb">
+    <Compile Include="Pantallas\AgregarMedicamento.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Gastos.Designer.vb">
+    <Compile Include="Pantallas\Gastos.Designer.vb">
       <DependentUpon>Gastos.vb</DependentUpon>
     </Compile>
-    <Compile Include="Gastos.vb">
+    <Compile Include="Pantallas\Gastos.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Grupo.vb">
+    <Compile Include="Pantallas\Grupo.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Grupo.Designer.vb">
+    <Compile Include="Pantallas\Grupo.Designer.vb">
       <DependentUpon>Grupo.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Inicio.Designer.vb">
+    <Compile Include="Pantallas\Inicio.Designer.vb">
       <DependentUpon>Inicio.vb</DependentUpon>
     </Compile>
-    <Compile Include="Inicio.vb">
+    <Compile Include="Pantallas\Inicio.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.vb">
+    <Compile Include="Pantallas\Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
-    <Compile Include="Login.vb">
+    <Compile Include="Pantallas\Login.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Medicamentos.Designer.vb">
+    <Compile Include="Pantallas\Medicamentos.Designer.vb">
       <DependentUpon>Medicamentos.vb</DependentUpon>
     </Compile>
-    <Compile Include="Medicamentos.vb">
+    <Compile Include="Pantallas\Medicamentos.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -192,10 +192,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Proveedores.Designer.vb">
+    <Compile Include="Pantallas\Principal.Designer.vb">
+      <DependentUpon>Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Proveedores.Designer.vb">
       <DependentUpon>Proveedores.vb</DependentUpon>
     </Compile>
-    <Compile Include="Proveedores.vb">
+    <Compile Include="Pantallas\Proveedores.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="App.Designer.vb">
@@ -206,43 +212,43 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AgregarMedicamento.resx">
+    <EmbeddedResource Include="Pantallas\AgregarMedicamento.resx">
       <DependentUpon>AgregarMedicamento.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AgregarProveedor.resx">
+    <EmbeddedResource Include="Pantallas\AgregarProveedor.resx">
       <DependentUpon>AgregarProveedor.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BuscarClientes.resx">
+    <EmbeddedResource Include="Pantallas\BuscarClientes.resx">
       <DependentUpon>BuscarClientes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BuscarGastos.resx">
+    <EmbeddedResource Include="Pantallas\BuscarGastos.resx">
       <DependentUpon>BuscarGastos.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BuscarMedicamentos.resx">
+    <EmbeddedResource Include="Pantallas\BuscarMedicamentos.resx">
       <DependentUpon>BuscarMedicamentos.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BuscarProveedor.resx">
+    <EmbeddedResource Include="Pantallas\BuscarProveedor.resx">
       <DependentUpon>BuscarProveedor.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Clientes.resx">
+    <EmbeddedResource Include="Pantallas\Clientes.resx">
       <DependentUpon>Clientes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Facturacion.resx">
+    <EmbeddedResource Include="Pantallas\Facturacion.resx">
       <DependentUpon>Facturacion.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Gastos.resx">
+    <EmbeddedResource Include="Pantallas\Gastos.resx">
       <DependentUpon>Gastos.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Grupo.resx">
+    <EmbeddedResource Include="Pantallas\Grupo.resx">
       <DependentUpon>Grupo.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Inicio.resx">
+    <EmbeddedResource Include="Pantallas\Inicio.resx">
       <DependentUpon>Inicio.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="Pantallas\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Medicamentos.resx">
+    <EmbeddedResource Include="Pantallas\Medicamentos.resx">
       <DependentUpon>Medicamentos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -251,7 +257,10 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Proveedores.resx">
+    <EmbeddedResource Include="Pantallas\Principal.resx">
+      <DependentUpon>Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Proveedores.resx">
       <DependentUpon>Proveedores.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="App.resx">
@@ -294,5 +303,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
