@@ -23,8 +23,8 @@ Partial Class Proveedores
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.ProveedoresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DataSet = New PBiofar.DataSet()
         Me.ProveedoresTableAdapter = New PBiofar.DataSetTableAdapters.ProveedoresTableAdapter()
@@ -39,6 +39,7 @@ Partial Class Proveedores
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.ProveedoresBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridViewProveedores, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -67,10 +68,10 @@ Partial Class Proveedores
         Me.ButtonNuevoProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonNuevoProveedor.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonNuevoProveedor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(73, Byte), Integer))
-        Me.ButtonNuevoProveedor.Location = New System.Drawing.Point(549, 14)
+        Me.ButtonNuevoProveedor.Location = New System.Drawing.Point(420, 14)
         Me.ButtonNuevoProveedor.Margin = New System.Windows.Forms.Padding(24, 14, 0, 5)
         Me.ButtonNuevoProveedor.Name = "ButtonNuevoProveedor"
-        Me.ButtonNuevoProveedor.Size = New System.Drawing.Size(174, 36)
+        Me.ButtonNuevoProveedor.Size = New System.Drawing.Size(164, 36)
         Me.ButtonNuevoProveedor.TabIndex = 12
         Me.ButtonNuevoProveedor.Text = "Nuevo proveedor"
         Me.ButtonNuevoProveedor.UseVisualStyleBackColor = False
@@ -83,14 +84,14 @@ Partial Class Proveedores
         Me.DataGridViewProveedores.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DataGridViewProveedores.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.DataGridViewProveedores.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridViewProveedores.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridViewProveedores.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.DataGridViewProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridViewProveedores.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDDataGridViewTextBoxColumn, Me.NITDataGridViewTextBoxColumn, Me.NombreDataGridViewTextBoxColumn, Me.DireccionDataGridViewTextBoxColumn, Me.TelefonoDataGridViewTextBoxColumn})
         Me.DataGridViewProveedores.DataSource = Me.ProveedoresBindingSource
@@ -104,12 +105,12 @@ Partial Class Proveedores
         Me.DataGridViewProveedores.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         Me.DataGridViewProveedores.RowHeadersVisible = False
         Me.DataGridViewProveedores.RowHeadersWidth = 42
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(97, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.Padding = New System.Windows.Forms.Padding(5, 0, 5, 0)
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridViewProveedores.RowsDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(5, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(97, Byte), Integer))
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.Padding = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridViewProveedores.RowsDefaultCellStyle = DataGridViewCellStyle6
         Me.DataGridViewProveedores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridViewProveedores.Size = New System.Drawing.Size(736, 410)
         Me.DataGridViewProveedores.TabIndex = 0
@@ -177,6 +178,7 @@ Partial Class Proveedores
         Me.FlowLayoutPanel1.Controls.Add(Me.TextBox1)
         Me.FlowLayoutPanel1.Controls.Add(Me.Button1)
         Me.FlowLayoutPanel1.Controls.Add(Me.ButtonNuevoProveedor)
+        Me.FlowLayoutPanel1.Controls.Add(Me.Button2)
         Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.FlowLayoutPanel1.Location = New System.Drawing.Point(20, 20)
         Me.FlowLayoutPanel1.Margin = New System.Windows.Forms.Padding(10)
@@ -194,7 +196,7 @@ Partial Class Proveedores
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(0, 14, 10, 10)
         Me.TextBox1.MinimumSize = New System.Drawing.Size(32, 32)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(385, 36)
+        Me.TextBox1.Size = New System.Drawing.Size(256, 36)
         Me.TextBox1.TabIndex = 13
         '
         'Button1
@@ -204,13 +206,28 @@ Partial Class Proveedores
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(73, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(399, 14)
+        Me.Button1.Location = New System.Drawing.Point(270, 14)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4, 14, 4, 5)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(122, 36)
         Me.Button1.TabIndex = 14
         Me.Button1.Text = "Buscar"
         Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(57, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(73, Byte), Integer))
+        Me.Button2.Location = New System.Drawing.Point(588, 14)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 14, 4, 5)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(122, 36)
+        Me.Button2.TabIndex = 15
+        Me.Button2.Text = "Actualizar tabla"
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Proveedores
         '
@@ -248,4 +265,5 @@ Partial Class Proveedores
     Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class

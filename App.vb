@@ -1,6 +1,6 @@
 ﻿Public Class App
 
-    Dim isLogin As Boolean = True
+    Dim isLogin As Boolean = False
     Private formularioActual As Form = Nothing
 
     Private Sub cargarFormulario(formularioHijo As Form, titulo As String)
@@ -27,5 +27,9 @@
         Else
             cargarFormulario(New Login, "Login")
         End If
+    End Sub
+
+    Private Sub PanelContenedorPrincipal_Paint(sender As Object, e As PaintEventArgs) Handles PanelContenedorPrincipal.Paint
+
     End Sub
 End Class
